@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link type= "text/css" rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <form id="seg">
+       <h1>Sing up</h1>
+        <div>
+            <label class="neg" for="nombre" >First name</label></br>
+            <input type="text" id="nombre" name="Nom" minlength="6"  required pattern="[A-Za-z]+"> 
+        </div>
+    </br>
+        <div>
+            <label class="neg" for="edad">Age</label> </br>
+            <input type="number" id="edad"  name="ed" max="120" required pattern="[0-9]">
+        </div>
+    </br>
+        <div>
+            <label class="neg" for="ingreso">Income</label> </br>
+            <input type="number" id="ingreso" name="inc"required pattern="[0-9]">
+        </div>
+    </br>
+        <div>
+            <label class="neg" for="mas">More Info</label> </br>
+            <textarea id="mas" name="masin" rows="3px" required></textarea>
+        </div>
+    </br>
+        <div>
+            <label class="neg" for="genero">Gender</label></br>
+            <input type="radio" name="genero" value="Male" id="Male"> 
+            <label for ="male">Male</label>
+            <input type="radio" name="genero" value ="Female" id="Female">
+            <label for ="male">Female</label>
+            <input type="radio" name="genero" value="Trans" id="Trans">
+            <label for ="male">Trans</label>
+        </div>
+     </br>
+        <div>
+            <label class="neg" for="plan" > Plan</label></br>
+            <select id="plan" name="plann" required>
+                <option value="">Select Plan</option>
+            </select>
+        </div>
+    </br>
+        <div>
+            <input type="checkbox" name="suscribete">
+            <label for="suscribete">Suscribe to Newsletter</label></br>
+        </div>
+    </br>
+        <button>Update</button>
+    </form>  
+    <form id="option1">
+        <h2>CREATE YOUR COUNT</h2>
+        <h3>This step 1</h3>
+        <input type="email" placeholder="Email"></br>
+        <input type="password" placeholder="Password"></br>
+        <input type="password" placeholder="Confirm Password"></br>
+        <button>Next</button>
+
+    </form>
+</body>
+</html>
